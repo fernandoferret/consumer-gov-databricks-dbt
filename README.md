@@ -110,9 +110,16 @@ models/
     └── schema.yml
 ```
 
+## Privacy and Data Governance
+
+This project uses publicly available complaint data from the Consumer.gov platform.
+
+The dataset contains company-related information and complaint metadata. No personally identifiable information (PII) such as consumer names, CPF numbers, email addresses, phone numbers, or residential addresses is included in the analytical models.
+
+The Bronze layer preserves the original public dataset, while the transformation layers focus on analytics-ready structures for reporting and business intelligence purposes.
+
 ## Future Improvements
 
-* Power BI dashboard
 * Additional dbt tests
 * Incremental models
 * CI/CD pipeline
