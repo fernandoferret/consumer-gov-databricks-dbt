@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_empresa
+    columns:
+      - name: nome_fantasia
+        tests:
+          - not_null
+
+  - name: dim_problema
+    columns:
+      - name: problema
+        tests:
+          - not_null
+
+  - name: fact_reclamacoes
+    columns:
+      - name: data_abertura
+        tests:
+          - not_null
