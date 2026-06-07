@@ -1,5 +1,7 @@
 # consumidor.gov.br Analytics Engineering Project
 
+v1 - 07jun26
+
 ## Overview
 
 This project demonstrates an end-to-end Analytics Engineering workflow using consumidor.gov.br complaint data.
