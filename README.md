@@ -29,7 +29,7 @@ Gold Layer (Dimensional Models)
 Power BI
 ```
 
-![Architecture Diagram](images/dbt-architecture)
+![Architecture Diagram](images/dbt-architecture.png)
 
 ## Power BI Dashboard
 
