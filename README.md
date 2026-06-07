@@ -8,12 +8,12 @@ The solution was built using a modern Lakehouse architecture with Databricks, De
 
 ## Objectives
 
-* Build a Lakehouse architecture using Databricks
-* Implement a Bronze → Staging → Gold data flow
-* Apply dimensional modeling concepts
-* Use dbt for data transformation and testing
-* Create documented and reproducible analytics pipelines
-* Prepare curated datasets for Power BI consumption
+- Build a Lakehouse architecture using Databricks
+- Implement a Bronze → Staging → Gold data flow
+- Apply dimensional modeling concepts
+- Use dbt for data transformation and testing
+- Create documented and reproducible analytics pipelines
+- Prepare curated datasets for Power BI consumption
 
 ## Architecture
 
@@ -29,36 +29,50 @@ Gold Layer (Dimensional Models)
 Power BI
 ```
 
+![Architecture Diagram](images/dbt-architecture)
+
+## Power BI Dashboard
+
+![Power BI Dashboard](images/dashboard-powerbi.png)
+
+### Key Findings
+
+- 317k+ complaints were analyzed.
+- Response rate reached 83.55%.
+- Resolution rate reached 74.26%.
+- Billing and dispute issues represented the largest complaint category.
+- Financial institutions concentrated the highest complaint volumes.
+
 ## Technology Stack
 
-* Databricks
-* Delta Lake
-* Unity Catalog
-* dbt
-* SQL
-* Python
-* Git
-* GitHub
-* Power BI
+- Databricks
+- Delta Lake
+- Unity Catalog
+- dbt
+- SQL
+- Python
+- Git
+- GitHub
+- Power BI
 
 ## Data Model
 
 ### Source
 
-* raw_consumidor_gov
+- raw_consumidor_gov
 
 ### Staging
 
-* stg_consumidor_gov
+- stg_consumidor_gov
 
 ### Dimensions
 
-* dim_empresa
-* dim_problema
+- dim_empresa
+- dim_problema
 
 ### Facts
 
-* fact_reclamacoes
+- fact_reclamacoes
 
 ## dbt Features Implemented
 
@@ -68,16 +82,16 @@ Source definitions were implemented to establish lineage from the raw layer.
 
 ### Models
 
-* Staging models
-* Dimensional models
-* Fact models
+- Staging models
+- Dimensional models
+- Fact models
 
 ### Testing
 
 Data quality tests were implemented for critical fields, including:
 
-* Not Null validation on dimensions
-* Not Null validation on fact tables
+- Not Null validation on dimensions
+- Not Null validation on fact tables
 
 ### Documentation
 
@@ -120,10 +134,10 @@ The Bronze layer preserves the original public dataset, while the transformation
 
 ## Future Improvements
 
-* Additional dbt tests
-* Incremental models
-* CI/CD pipeline
-* Advanced dimensional modeling
+- Additional dbt tests
+- Incremental models
+- CI/CD pipeline
+- Advanced dimensional modeling
 
 ## Author
 
